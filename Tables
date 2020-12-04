@@ -1,0 +1,39 @@
+CREATE TABLE Tutors(
+tutorID varchar(255) NOT NULL,
+tFirstName varchar(255),
+tLastName varchar(255),
+tPhone varchar(255),
+tStreet varchar(255),
+tCity varchar(255),
+tZipCode varchar(255),
+PRIMARY KEY (tutorID)
+);
+CREATE TABLE Students(
+studentID varchar(255) NOT NULL,
+sFirstName varchar(255),
+sLastName varchar(255),
+sPhone varchar(255),
+sStreet varchar(255),
+sCity  varchar(255),
+sZipCode varchar(255),
+PRIMARY KEY (studentID)
+);
+CREATE TABLE Courses(
+courseID varchar(255) NOT NULL,
+courseName varchar(255),
+duration int,
+PRIMARY KEY (courseID)
+);
+CREATE TABLE Sections(
+sectionID varchar(255) NOT NULL,
+day varchar(255),
+time varchar(255),
+seats int,
+courseID varchar(255) NOT NULL,
+tutorID varchar(255) NOT NULL,
+studentID varchar(255) NOT NULL,
+PRIMARY KEY (sectionID),
+FOREIGN KEY (courseID) REFERENCES Courses(courseID),
+FOREIGN KEY (tutorID) REFERENCES Tutors(tutorID),
+FOREIGN KEY (studentID) REFERENCES Students(studentID)
+);
