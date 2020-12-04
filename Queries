@@ -1,0 +1,19 @@
+SELECT sectionID
+FROM Sections
+WHERE seats > 20;
+
+SELECT sectionID
+FROM Sections
+Where day LIKE '%Monday%';
+
+SELECT tFirstName, tLastName
+FROM Tutors
+WHERE tPhone LIKE '%707%';
+
+SELECT courseName
+FROM Courses
+WHERE duration > 15;
+
+SELECT studentID
+FROM Students
+WHERE sZipCode LIKE '%03053%';
