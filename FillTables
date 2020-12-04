@@ -1,0 +1,40 @@
+INSERT INTO Tutors
+VALUES('T001', 'Cole', 'Smith', '505-814-9418', '554 Pennsylvania Drive', 'Palm Coast', '32137');
+INSERT INTO Tutors
+VALUES('T002', 'Maria', 'Brown', '707-425-9403', '32 Bald Hill St', 'Centreville', '20120');
+INSERT INTO Tutors
+VALUES('T003', 'Jake', 'Young', '972-915-4003', '9048 Maiden St', 'Lebanon', '17042');
+INSERT INTO Tutors
+VALUES('T004', 'Paul', 'Lee', '201-526-7096', '712 Marconi Drive', 'Hendersonville', '28792');
+INSERT INTO Tutors
+VALUES('T005', 'Mark', 'Garcia', '205-365-5409', '1 Bedford Circle', 'Lemont', '60439');
+INSERT INTO Students
+VALUES('S001','Josh', 'Williams', '813-655-8444', '153 Trusel St', 'Lockport', '14094');
+INSERT INTO Students
+VALUES('S002','Liz', 'Wood', '830-481-2433', '9588 College Ave', 'Little Falls', '07424');
+INSERT INTO Students
+VALUES('S003','Bob', 'Hall', '423-324-2042', '8558 Rockville Ave', 'Londonderry', '03053');
+INSERT INTO Students
+VALUES('S004','Sarah', 'Jones', '480-298-9574', '82 Second Lane', 'Palmetto', '34221');
+INSERT INTO Students
+VALUES('S005','Noah', 'Turner', '312-986-4010', '7831 Griffin St', 'Ada', '74820');
+INSERT INTO Courses
+VALUES('C001', 'Spanish level 1', '20');
+INSERT INTO Courses
+VALUES('C002', 'Spanish level 2', '15');
+INSERT INTO Courses
+VALUES('C003', 'French level 1', '10');
+INSERT INTO Courses
+VALUES('C004', 'German level 1', '25');
+INSERT INTO Courses
+VALUES('C005', 'Italian level 2', '8');
+INSERT INTO Sections
+VALUES('B001', 'Monday', 'Evening', '35', 'C003', 'T001', 'S004');
+INSERT INTO Sections
+VALUES('B002', 'Wednesday', 'Morning', '20', 'C001', 'T005', 'S002');
+INSERT INTO Sections
+VALUES('B003', 'Friday', 'Evening', '25', 'C005', 'T002', 'S003');
+INSERT INTO Sections
+VALUES('B004', 'Tuesday', 'Evening', '15', 'C002', 'T004', 'S005');
+INSERT INTO Sections
+VALUES('B005', 'Monday', 'Morning', '40', 'C004', 'T003', 'S001');
